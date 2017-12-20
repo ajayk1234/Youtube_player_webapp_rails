@@ -1,0 +1,21 @@
+// Place all the styles related to the videos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.button {
+  display: inline-block;
+  padding: 10px 12px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #9c9;
+  background-color: #4CAF50;
+  border: none;
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}

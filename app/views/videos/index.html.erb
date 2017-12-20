@@ -1,0 +1,16 @@
+</br>
+</br>
+    <%= link_to 'Add New Video', new_video_path, class: 'button' %>
+    <h1> Enjoy Watching Videos........ </h1>
+
+
+<% if @videos.any? %>
+    <h1>Latest videos</h1>
+    <% @videos.in_groups_of(3) do |group| %>
+        <% group.each do |video| %>
+          <% if video %>
+                 <%= link_to image_tag("https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg"), playvideo_path(id: video.id) %>
+          <% end %>
+        <% end %>
+    <% end %>
+<% end %>
