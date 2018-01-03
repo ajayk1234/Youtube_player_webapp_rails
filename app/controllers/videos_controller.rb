@@ -1,7 +1,7 @@
 class VideosController < ApplicationController
   def index
-    # binding.pry
     @videos = Video.order('created_at DESC')
+    authorize @videos
   end
   def new
     @video = Video.new

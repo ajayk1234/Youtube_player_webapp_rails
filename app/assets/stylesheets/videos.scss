@@ -19,3 +19,74 @@
   background-color: #3e8e41;
   transform: translateY(4px);
 }
+body {
+  margin:0;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #FFA500;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 40px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a1 {
+  float: right;
+  display: block;
+  color: #111;
+  text-align: center;
+  padding: 40px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  padding: 100px;
+  margin-top: 50px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 50px;
+    width: 300px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.upload {
+    position: absolute;
+    background-color: lightgrey;
+    width: 500px;
+    top: 25%;
+    right: 35%;
+    border: 30px solid #FFA500;
+    padding: 50px;
+}
+.input_search[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}

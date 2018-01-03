@@ -1,6 +1,6 @@
 class VideoPolicy < ApplicationPolicy
   def index?
-    true
+    return true if user.present? && user.uid == "109089556586122151604"
   end
  
   def create?
