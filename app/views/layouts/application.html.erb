@@ -16,6 +16,12 @@
   <% else %>
     <%= link_to "Sign In", "/auth/google_oauth2", id: "sign_in",class: "a1  " %>
   <% end %>
+  <div class="a">
+  <%= form_tag(videos_path, method: :get) do %>
+  <%= text_field_tag :term, params[:term] ,class: "input_search", placeholder: "Search" %>
+  <%= submit_tag 'Search',class: "a"%>
+  <% end %>    
+  </div>
 </div>
 <div>
   <%= yield %>

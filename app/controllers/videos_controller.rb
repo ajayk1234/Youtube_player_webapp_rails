@@ -1,6 +1,12 @@
 class VideosController < ApplicationController
   def index
-    @videos = Video.order('created_at DESC')
+    # binding.pry
+    @videos = if params[:term]
+      Video.where('title LIKE ?', "%#{params[:term]}%")
+    else
+      Video.all
+    end
+    # @videos = Video.order('created_at DESC')
     authorize @videos
   end
   def new
@@ -9,7 +15,7 @@ class VideosController < ApplicationController
   end
 
   def create
-    binding.pry
+    # binding.pry
     @video = Video.new(user_params)
     authorize @video
     if @video.save

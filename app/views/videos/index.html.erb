@@ -1,8 +1,9 @@
 <div class = "main">
+<h1>Recent Videos</h1>
 <% if @videos.any? %>
 <% @videos.each do |video| %>
 <% if video %>
-<%= link_to image_tag("https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg"), playvideo_path(id: video.id), class: "img"  %>
+<%= link_to image_tag("https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg",:title => "#{video.title}"),playvideo_path(id: video.id), class: "img"  %>
 <% end %>
 <% end %>
 <% end %>

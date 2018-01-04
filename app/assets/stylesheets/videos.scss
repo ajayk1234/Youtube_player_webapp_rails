@@ -27,7 +27,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #FFA500;
+  background-color: #87CEFA;
   position: fixed;
   top: 0;
   width: 100%;
@@ -38,7 +38,7 @@ body {
   display: block;
   color: #000;
   text-align: center;
-  padding: 40px 30px;
+  padding: 30px 30px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -55,7 +55,7 @@ body {
 
 .main {
   padding: 100px;
-  margin-top: 50px;
+  margin-top: 10px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
 
@@ -75,18 +75,13 @@ img:hover {
     width: 500px;
     top: 25%;
     right: 35%;
-    border: 30px solid #FFA500;
+    border: 30px solid #87CEFA;
     padding: 50px;
 }
 .input_search[type=text] {
-    width: 100%;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 20px 30px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    border: 3px solid #ccc;
 }
